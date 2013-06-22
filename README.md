@@ -51,7 +51,7 @@ a string that represents the request type (GET or POST), the default request typ
 ```javascript
 $("#Combo2").cascade({
     url: "/Data/GetData",
-    dependendent: "Combo3",
+    dependent : "Combo3",
     textKey: "Text",
     valueKey: "Value",
     defualtItemText: "select an item",
