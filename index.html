@@ -1,93 +1,127 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-  <title>Jquery.cascade</title>
-  <meta name="description" content="A simple cascade drop down jQuery plugin">
+    <title>Jquery.cascade by mshahrouri</title>
+  </head>
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <body>
 
-</head>
-
-<body>
-
-  <div class="wrapper">
     <header>
-      <h1 class="title">Jquery.cascade</h1>
+      <div class="container">
+        <h1>Jquery.cascade</h1>
+        <h2>A simple cascade drop down jQuery plugin</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/mshahrouri/jQuery.Cascade/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/mshahrouri/jQuery.Cascade/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/mshahrouri/jQuery.Cascade" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
     </header>
-    <div id="container">
-      <p class="tagline">A simple cascade drop down jQuery plugin</p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/mshahrouri/jQuery.Cascade/tarball/master" class="download-button tar"><span>Download</span></a>
-          <a href="https://github.com/mshahrouri/jQuery.Cascade/zipball/master" class="download-button zip"><span>Download</span></a>
-          <a href="https://github.com/mshahrouri/jQuery.Cascade" class="code">View Jquery.cascade on GitHub</a>
-        </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="jquery-cascade-plugin" class="anchor" href="#jquery-cascade-plugin"><span class="octicon octicon-link"></span></a>jQuery Cascade Plugin</h1>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<p>this is a simple jQuery plugin for cascading drop downs with the following features:</p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<ul>
+<li>filling a single drop down depending on multiple drop downs.</li>
+<li>adding extra arguments.</li>
+<li>specifying a request type (GET or POST). </li>
+<li>specifying a function to be executed before starting the request.</li>
+<li>specifying a function to be executed after completing the request.</li>
+</ul><h2>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options:</h2>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<h4>
+<a name="dependent-required" class="anchor" href="#dependent-required"><span class="octicon octicon-link"></span></a>dependent (required):</h4>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>the ID of the dependent drop down.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<h4>
+<a name="url-required" class="anchor" href="#url-required"><span class="octicon octicon-link"></span></a>url (required):</h4>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>the url from where to get the data.</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<h4>
+<a name="textkey-required" class="anchor" href="#textkey-required"><span class="octicon octicon-link"></span></a>textKey (required):</h4>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>the key that will be used for getting the text of an item after parsing the returned result.</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<h4>
+<a name="valuekey-required" class="anchor" href="#valuekey-required"><span class="octicon octicon-link"></span></a>valueKey (required):</h4>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </article>
-      </div>
+<p>the key that will be used for getting the value of an item after parsing the returned result.</p>
+
+<h4>
+<a name="argname-required" class="anchor" href="#argname-required"><span class="octicon octicon-link"></span></a>argName (required):</h4>
+
+<p>the argument name to be used when sending request.</p>
+
+<h4>
+<a name="onerror" class="anchor" href="#onerror"><span class="octicon octicon-link"></span></a>onError:</h4>
+
+<p>the function to be executed if an error occured while sending the request.</p>
+
+<h4>
+<a name="oncomplete" class="anchor" href="#oncomplete"><span class="octicon octicon-link"></span></a>onComplete:</h4>
+
+<p>the function to be executed after request is complete.</p>
+
+<h4>
+<a name="beforerequest" class="anchor" href="#beforerequest"><span class="octicon octicon-link"></span></a>beforeRequest</h4>
+
+<p>the function to be executed before the request starts.</p>
+
+<h4>
+<a name="defualtitemtext" class="anchor" href="#defualtitemtext"><span class="octicon octicon-link"></span></a>defualtItemText:</h4>
+
+<p>the text to be used for the default item in the dependent drop down.</p>
+
+<h4>
+<a name="extraparam" class="anchor" href="#extraparam"><span class="octicon octicon-link"></span></a>extraParam:</h4>
+
+<p>an object that contains the extra parameters to be send with the request (for example <code>{param1 : value1}</code>).</p>
+
+<h4>
+<a name="additionalddl" class="anchor" href="#additionalddl"><span class="octicon octicon-link"></span></a>additionalDDL:</h4>
+
+<p>an array of objects (just the argument name and the ID of the drop down) that represents the additional drop downs to send its values with the request (for example <code>[{ argName: "val2", ID: "additionalDDL1" }, { argName: "val3", ID: "additionalDDL2" }]</code>).</p>
+
+<h4>
+<a name="requesttype" class="anchor" href="#requesttype"><span class="octicon octicon-link"></span></a>requestType:</h4>
+
+<p>a string that represents the request type (GET or POST), the default request type is GET.</p>
+
+<h2>
+<a name="sample-usage" class="anchor" href="#sample-usage"><span class="octicon octicon-link"></span></a>Sample usage:</h2>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">"#Combo2"</span><span class="p">).</span><span class="nx">cascade</span><span class="p">({</span>
+    <span class="nx">url</span><span class="o">:</span> <span class="s2">"/Data/GetData"</span><span class="p">,</span>
+    <span class="nx">dependent</span> <span class="o">:</span> <span class="s2">"Combo3"</span><span class="p">,</span>
+    <span class="nx">textKey</span><span class="o">:</span> <span class="s2">"Text"</span><span class="p">,</span>
+    <span class="nx">valueKey</span><span class="o">:</span> <span class="s2">"Value"</span><span class="p">,</span>
+    <span class="nx">defualtItemText</span><span class="o">:</span> <span class="s2">"select an item"</span><span class="p">,</span>
+    <span class="nx">argName</span><span class="o">:</span> <span class="s2">"val1"</span><span class="p">,</span>
+    <span class="nx">additionalDDL</span><span class="o">:</span> <span class="p">[{</span> <span class="nx">argName</span><span class="o">:</span> <span class="s2">"val2"</span><span class="p">,</span> <span class="nx">ID</span><span class="o">:</span> <span class="s2">"Combo1"</span> <span class="p">}],</span>
+    <span class="nx">beforeRequest</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="nx">alert</span><span class="p">(</span><span class="s2">"before satrt"</span><span class="p">);</span> <span class="p">},</span>
+    <span class="nx">onComplete</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="nx">alert</span><span class="p">(</span><span class="s2">"complete"</span><span class="p">);</span> <span class="p">},</span>
+    <span class="nx">requestType</span><span class="o">:</span> <span class="s2">"POST"</span>
+<span class="p">});</span>
+</pre></div>
+      </section>
     </div>
-    <footer>
-      <div class="owner">
-      <p><a href="https://github.com/mshahrouri" class="avatar"><img src="https://avatars2.githubusercontent.com/u/951528?s=60" width="48" height="48"/></a> <a href="https://github.com/mshahrouri">mshahrouri</a> maintains <a href="https://github.com/mshahrouri/jQuery.Cascade">Jquery.cascade</a></p>
 
-
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/mshahrouri/jQuery.Cascade/tarball/master" class="tar">tar</a><a href="https://github.com/mshahrouri/jQuery.Cascade/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
-
-            <script type="text/javascript">
+              <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -98,5 +132,5 @@ $ git checkout gh-pages
             } catch(err) {}
           </script>
 
-</body>
+  </body>
 </html>
