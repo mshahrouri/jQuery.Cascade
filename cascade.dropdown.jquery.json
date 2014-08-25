@@ -1,0 +1,24 @@
+{
+    "name": "Cascade.Dropdown",
+    "title": "jQuery Cascade Dropdown",
+    "description": "this is a simple jQuery plugin for cascading drop downs",
+    "keywords": [
+        "Cascade",
+        "Dropdown"
+    ],
+    "version": "0.1",
+    "author": {
+        "name": "Mohammad Shahrouri",
+        "url": "https://github.com/mshahrouri"
+    },
+    "licenses": [
+    {
+        "type": "AGPL-3.0",
+        "url": "http://opensource.org/licenses/AGPL-3.0"
+    }
+    ],
+    "homepage": "http://mshahrouri.github.io/jQuery.Cascade/",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}
